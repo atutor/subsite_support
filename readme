@@ -1,0 +1,5 @@
+# Subite Support Module Readme
+
+This module just defines an email for ATutor subsite owners, as a first level support  contact.
+
+Administrators can make this module available to subsites by placing it in the mods/ directory of the main site for a multisite installation. It then becomes available to Subsite administrators to install and thus retrieve the contact information. The main site administrator must manually set the contact email at the top of the module.php file include within the module files.
