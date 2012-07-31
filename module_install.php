@@ -31,6 +31,9 @@ if (!defined('AT_INCLUDE_PATH')) { exit; }
 //$_course_privilege = TRUE; // possible values: FALSE | AT_PRIV_ADMIN | TRUE
 $_admin_privilege  = TRUE; // possible values: FALSE | TRUE
 //$_cron_interval    = 35; // run every 30 minutes
+if (defined('IS_SUBSITE') && IS_SUBSITE) {
+	$msg->addError(array('MODULE_INSTALL', '<li>This module cannot be installed on subsites.</li>'));
+}
 
 
 /********
